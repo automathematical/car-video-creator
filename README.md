@@ -1,22 +1,38 @@
-# Car Video Creator
+# 3D Car Configurator MVP
 
-Create automated car-themed videos for fun or demonstration purposes.
+🚗 A web-based 3D car configurator showcasing my skills in building immersive, user-friendly apps with **React.js** and **Three.js**. This MVP lets users customize a 3D model’s color, generate a video with a text overlay, and download it, all in a responsive, cross-platform interface.
 
 ## Features
 
-• Combines car footage, text, and music into a single video  
-• Offers simple configuration for custom content
+- **Interactive UI**: Responsive React.js interface with Tailwind CSS for color selection and video recording.
+- **3D Rendering**: Real-time color updates on a 3D model (cube placeholder) using Three.js.
+- **Video Processing**: 5-second video with “Custom Car” overlay
 
-## Installation
+## Tech Stack
 
-1. Clone this repository
-2. Install dependencies with your preferred package manager
+- React.js: Dynamic UI
+- Three.js: 3D rendering
+- Tailwind CSS: Responsive styling
 
-## Usage
+## Getting Started
 
-• Configure your video settings in the provided configuration file  
-• Run the main script to produce your video
+1. Clone: `git clone https://github.com/automathematical/car-video-creator`
+2. Open `index.html` in a browser.
+3. Use buttons to change colors, record, and download the video.
 
-### Contributions
+## Demo
 
-Feel free to open an issue or submit a pull request for improvements.
+[[live demo link]](https://car-video-creator.vercel.app/)
+
+## Why This Project?
+
+Showcases my ability to build UI-heavy apps, implement 3D rendering, delivering optimized, cross-platform solutions.
+
+## Contact
+
+- GitHub: [automathematical](https://github.com/automathematical)
+- Email: [mathieu@timeoffprojects.be]
+
+---
+
+Built by [Time Off Projects] | Turning complex ideas into user-friendly realities.
