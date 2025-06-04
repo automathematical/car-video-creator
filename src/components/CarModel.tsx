@@ -64,12 +64,14 @@ export const CarModel = ({ color }: CarModelProps) => {
       </mesh>
 
       {/* Wheels */}
-      {[
-        [-1.3, 0, 2.2],
-        [1.3, 0, 2.2],
-        [-1.3, 0, -2.2],
-        [1.3, 0, -2.2],
-      ].map((position, index) => (
+      {(
+        [
+          [-1.3, 0, 2.2],
+          [1.3, 0, 2.2],
+          [-1.3, 0, -2.2],
+          [1.3, 0, -2.2],
+        ] as const
+      ).map((position, index) => (
         <group key={index} position={position}>
           <mesh
             ref={(el) => {
@@ -89,7 +91,9 @@ export const CarModel = ({ color }: CarModelProps) => {
       ))}
 
       {/* Headlights */}
-      {[[-0.8, 0.7, 3], [0.8, 0.7, 3]].map((position, index) => (
+      {(
+        [[-0.8, 0.7, 3], [0.8, 0.7, 3]] as const
+      ).map((position, index) => (
         <mesh key={index} position={position}>
           <sphereGeometry args={[0.2, 16, 16]} />
           <meshStandardMaterial
@@ -101,7 +105,9 @@ export const CarModel = ({ color }: CarModelProps) => {
       ))}
 
       {/* Taillights */}
-      {[[-0.8, 0.7, -3], [0.8, 0.7, -3]].map((position, index) => (
+      {(
+        [[-0.8, 0.7, -3], [0.8, 0.7, -3]] as const
+      ).map((position, index) => (
         <mesh key={index} position={position}>
           <sphereGeometry args={[0.15, 16, 16]} />
           <meshStandardMaterial
